@@ -29,3 +29,8 @@ Si un message "Erreur lors du chargement veuillez réessayer" apparaît quitter 
 
 * *Peut-on mettre en favoris depuis la recherche d'un film ?*
 Dans la version actuelle ce n'est pas possible.
+
+Page principale             | Page de détails           | Page de recherche           
+:-------------------------:|:-------------------------:|:-------------------------:|
+![36db214d0fa944a59b4e1737c739a4d7](https://github.com/DehMatthieu/MovieEnjoyer/assets/31929866/57c02dd0-d39f-4947-8eff-24559a34674b) |![77bf2d0d3d3b25948701d54c59f40184](https://github.com/DehMatthieu/MovieEnjoyer/assets/31929866/f31e32d1-7ff2-4693-908a-659d25b59d7a)|![f2b443bb8758889b943216082145416f](https://github.com/DehMatthieu/MovieEnjoyer/assets/31929866/f302b348-2249-436d-b2a4-022948015504)|
+
