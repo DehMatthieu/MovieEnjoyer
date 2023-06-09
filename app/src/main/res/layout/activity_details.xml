@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        tools:context="fr.epf.movieenjoyer.Activities.Details"
+        android:background="#E6E2E2"
+        android:orientation="vertical">
+
+    <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbarDetails"
+            app:titleTextColor="#E6E2E2"
+            android:background="#1a1a1a"
+            android:layout_width="match_parent"
+            android:layout_height="?actionBarSize"/>
+
+    <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minHeight="50dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="280dp"
+            android:layout_marginBottom="300dp"
+            android:minWidth="50dp"/>
+
+    <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+            <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="238dp"
+                    android:id="@+id/toolbarimage"/>
+            <ImageButton
+                    android:layout_width="30dp"
+                    android:background="@null"
+                    android:id="@+id/fav_button"
+                    android:src="@drawable/ic_favorite_border_black_24dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_gravity="right"
+                    android:layout_height="wrap_content"/>
+
+            <ImageButton
+                    android:layout_width="30dp"
+                    android:background="@null"
+                    android:id="@+id/unfav_button"
+                    android:visibility="gone"
+                    android:src="@drawable/ic_favorite_black_24dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_gravity="right"
+                    android:layout_height="wrap_content"/>
+
+            <TextView android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:layout_marginLeft="5dp"
+                      android:layout_marginRight="5dp"
+                      android:textSize="18sp"
+                      android:id="@+id/textviewmore"/>
+
+            <TextView android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:text="Films similaires"
+                      android:layout_marginBottom="10dp"
+                      android:layout_marginTop="30dp"
+                      android:textColor="#1a1a1a"
+                      android:gravity="center"
+                      android:textSize="30sp"
+                      android:textStyle="bold"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:id="@+id/recycler2"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
